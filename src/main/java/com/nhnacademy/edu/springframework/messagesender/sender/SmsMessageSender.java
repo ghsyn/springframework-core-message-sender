@@ -16,4 +16,8 @@ public class SmsMessageSender implements MessageSender {
     private void init() {
         System.out.println("init method called in SmsMessageSender");
     }
+
+    private void destroy() {
+        System.out.println("destroy called in SmsMessageSender");
+    }
 }

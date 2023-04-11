@@ -17,7 +17,7 @@ public class EmailMessageSender implements MessageSender {
         System.out.println("init method called in EmailMessageSender");
     }
 
-    private void cleanup() {
+    private void destroy() {
         System.out.println("destroy called in EmailMessageSender");
     }
 }
