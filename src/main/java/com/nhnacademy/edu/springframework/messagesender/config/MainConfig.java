@@ -6,21 +6,11 @@ import com.nhnacademy.edu.springframework.messagesender.sender.MessageSender;
 import com.nhnacademy.edu.springframework.messagesender.sender.SmsMessageSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.ImportResource;
+import org.springframework.context.annotation.*;
 
 @Configuration
+@ComponentScan(basePackages = "com.nhnacademy.edu.springframework.messagesender.sender")
+@PropertySource(value = "classpath:/name.properties", encoding = "UTF-8")
 public class MainConfig {
 
-    private final MessageSenderConfig messageSenderConfig;
-
-    public MainConfig(MessageSenderConfig messageSenderConfig) {
-        this.messageSenderConfig = messageSenderConfig;
-    }
-
-    @Bean
-    public MessageSendService messageSendService() {
-        return new MessageSendService(messageSenderConfig.smsMessageSender());
-    }
 }

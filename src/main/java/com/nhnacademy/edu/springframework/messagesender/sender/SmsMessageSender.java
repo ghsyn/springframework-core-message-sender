@@ -2,7 +2,9 @@ package com.nhnacademy.edu.springframework.messagesender.sender;
 
 import com.nhnacademy.edu.springframework.messagesender.User;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
+@Component("smsMessageSender")
 public class SmsMessageSender implements MessageSender {
 
 

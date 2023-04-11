@@ -1,7 +1,10 @@
 package com.nhnacademy.edu.springframework.messagesender.sender;
 
 import com.nhnacademy.edu.springframework.messagesender.User;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
+@Component("emailMessageSender")
 public class EmailMessageSender implements MessageSender {
 
     public EmailMessageSender() {

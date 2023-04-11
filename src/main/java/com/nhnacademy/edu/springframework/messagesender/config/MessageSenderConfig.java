@@ -6,17 +6,9 @@ import com.nhnacademy.edu.springframework.messagesender.sender.SmsMessageSender;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 @Configuration
 public class MessageSenderConfig {
 
-    @Bean
-    public MessageSender smsMessageSender() {
-        return new SmsMessageSender();
-    }
-
-    @Bean
-    public MessageSender emailMessageSender() {
-        return new EmailMessageSender();
-    }
 }
