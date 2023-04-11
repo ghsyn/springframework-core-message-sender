@@ -6,8 +6,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.nhnacademy.edu.springframework.messagesender.config");
-        MessageSendService service = context.getBean("messageSendService", MessageSendService.class);
-        service.doSendMessage();
+        AnnotationConfigApplicationContext context =
+                new AnnotationConfigApplicationContext("com.nhnacademy.edu.springframework.messagesender.config");
+        context.close();
     }
 }
