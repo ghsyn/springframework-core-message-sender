@@ -1,4 +1,4 @@
-package com.nhnacademy.edu.springframework.messagesender.sender;
+package com.nhnacademy.edu.springframework.messagesender.annotation;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 
