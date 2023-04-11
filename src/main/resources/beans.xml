@@ -14,7 +14,5 @@
 <!--    <bean id="beanProcessor" class="com.nhnacademy.edu.springframework.messagesender.sender.BeanProcessor">-->
 <!--    </bean>-->
 
-    <bean id="messageSendService" class="com.nhnacademy.edu.springframework.messagesender.sender.MessageSendService" >
-        <property name="messageSender" ref="smsMessageSender"/>
-    </bean>
+    <bean id="messageSendService" class="com.nhnacademy.edu.springframework.messagesender.sender.MessageSendService" autowire="byType"/>
 </beans>
