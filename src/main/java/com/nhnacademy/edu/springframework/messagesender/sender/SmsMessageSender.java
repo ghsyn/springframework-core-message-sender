@@ -1,11 +1,13 @@
 package com.nhnacademy.edu.springframework.messagesender.sender;
 
 import com.nhnacademy.edu.springframework.messagesender.User;
+import org.springframework.context.annotation.Bean;
 
 public class SmsMessageSender implements MessageSender {
 
+
     public SmsMessageSender() {
-        System.out.println("SMS MessageSender initiated!!");
+        System.out.println("Create SMS MessageSender");
     }
 
     @Override
@@ -14,10 +16,10 @@ public class SmsMessageSender implements MessageSender {
     }
 
     private void init() {
-        System.out.println("init method called in SmsMessageSender");
+        System.out.println("INIT method called in SmsMessageSender");
     }
 
     private void destroy() {
-        System.out.println("destroy called in SmsMessageSender");
+        System.out.println("DESTROY method called in SmsMessageSender");
     }
 }

@@ -5,7 +5,7 @@ import com.nhnacademy.edu.springframework.messagesender.User;
 public class EmailMessageSender implements MessageSender {
 
     public EmailMessageSender() {
-        System.out.println("Email MessageSender initiated!!");
+        System.out.println("Create Email MessageSender");
     }
 
     @Override
@@ -14,10 +14,10 @@ public class EmailMessageSender implements MessageSender {
     }
 
     private void init() {
-        System.out.println("init method called in EmailMessageSender");
+        System.out.println("INIT method called in EmailMessageSender");
     }
 
     private void destroy() {
-        System.out.println("destroy called in EmailMessageSender");
+        System.out.println("DESTORY method called in EmailMessageSender");
     }
 }

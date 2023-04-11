@@ -4,11 +4,9 @@ import com.nhnacademy.edu.springframework.messagesender.User;
 import com.nhnacademy.edu.springframework.messagesender.annotation.SMS;
 
 public class MessageSendService {
-    private MessageSender messageSender;
+    private final MessageSender messageSender;
 
-    @
-    public MessageSendService(@SMS MessageSender messageSender) {
-        System.out.println("setMessageSender invoked!");
+    public MessageSendService(MessageSender messageSender) {
         this.messageSender = messageSender;
     }
 
