@@ -1,5 +1,7 @@
 package com.nhnacademy.edu.springframework.messagesender;
 
+import org.springframework.stereotype.Component;
+
 public class User {
     private final String email;
     private final String phoneNumber;
