@@ -9,8 +9,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.*;
 
 @Configuration
-@ComponentScan(basePackages = "com.nhnacademy.edu.springframework.messagesender.sender")
+@ComponentScan(basePackages = {"com.nhnacademy.edu.springframework.messagesender.sender", "com.nhnacademy.edu.springframework.messagesender.aop"})
 @PropertySource(value = "classpath:/name.properties", encoding = "UTF-8")
+@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class MainConfig {
 
 }

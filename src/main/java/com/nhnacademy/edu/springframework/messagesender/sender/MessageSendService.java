@@ -25,6 +25,6 @@ public class MessageSendService {
 
     public void doSendMessage() {
         User user = new User("siyeonkim@nhndooray.com", "010-1234-5678");
-        messageSender.sendMessage(user, "hello " + name);
+        messageSender.sendMessage(user, "hello from " + name);
     }
 }
